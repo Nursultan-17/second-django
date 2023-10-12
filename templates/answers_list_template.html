@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>answers list template</title>
+</head>
+<body>
+    <a href="{% url 'answer_create_url' %}">Create New Answer</a>
+    {% for answer in answers %}
+        <h3>{{ answer.id }} - {{ answer.header }}</h3>
+        <a href="{% url 'answer_detail_url' answer.id %}">Show Answer</a>
+    {% endfor %}
+</body>
+</html>

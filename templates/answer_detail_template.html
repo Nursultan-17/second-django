@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>answer detail template</title>
+</head>
+<body>
+    <a href="{% url 'answers_list_url' %}">All Answers</a>
+    <h1>{{ answer.header }}</h1>
+    <h3>{{ answer.body }}</h3>
+    <p>{{ answer.author }}</p>
+    <p>{{ answer.created_at }}</p>
+</body>
+</html>
